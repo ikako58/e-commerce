@@ -1,0 +1,78 @@
+/* Grid layout */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background: #fafafa;
+}
+
+/* Card container */
+.card-container {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #222;
+  position: relative;
+}
+
+.card-container:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* Heading */
+.card-container h1 {
+  font-size: medium;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Product image */
+.card-container img {
+width: 300px;
+height: 300px;
+  border-radius: 0.8rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card-container img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+}
+
+/* Extra info */
+.extra-info {
+  margin-bottom: 1.2rem;
+}
+
+.extra-info p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.3rem 0;
+  color: #444;
+}
+
+.extra-info p:first-child {
+  color: #f59e0b; /* amber for stars */
+}
+
+.extra-info p:last-child {
+  color: #16a34a; /* green for price */
+}
+.card-actions{
+  display: flex;
+  gap: 5px;
+}

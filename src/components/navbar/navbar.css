@@ -1,0 +1,53 @@
+.navigation {
+  position: sticky;       /* make navbar sticky */
+  top: 0;                 /* stick at the very top */
+  z-index: 1000;          /* stay above all content */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #fff;       /* solid background so content doesn’t overlap */
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left side links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: #ff6b6b;
+}
+
+/* Right side icons */
+.nav-icons {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.6rem;
+  color: #333;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.icon:hover {
+  color: #ff6b6b;
+  transform: scale(1.2);
+}

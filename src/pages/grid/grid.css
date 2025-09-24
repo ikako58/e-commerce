@@ -1,0 +1,42 @@
+/* ===========================
+   Grid Page Layout
+=========================== */
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ===========================
+   Filters bar
+=========================== */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  justify-content: center;
+}
+
+.filters h3 {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* ===========================
+   Products Grid
+=========================== */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem; /* gap between cards */
+}
